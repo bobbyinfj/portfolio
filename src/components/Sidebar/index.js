@@ -33,11 +33,11 @@ const Sidebar = (props) => {
         </div>
       </Card>
 
-      <Card style={{marginBottom:'20px',padding:'20px', boxSizing:'border-box'}}>
+      {/* <Card style={{marginBottom:'20px',padding:'20px', boxSizing:'border-box'}}>
         <div className="cardHeader">
           <span> Social Network</span>
         </div>
-      </Card>
+      </Card> */}
 
       <Card style={{marginBottom:'20px',padding:'20px', boxSizing:'border-box'}}>
       <div className="cardHeader">

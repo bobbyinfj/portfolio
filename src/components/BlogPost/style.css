@@ -33,12 +33,17 @@
 }
 
 .postImageContainer img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
-  max-height: 100%; 
+  max-height: 50%;
 }
 
 .postContent{
-  margin:10px;
+  margin:10px auto;
+  padding: 10px;
+  max-width: 680px;
 }
 
 .postContent h3{
@@ -47,9 +52,11 @@
 }
 
 .postContent p{
-  font-size:14px;
-  color:#6c6c6c;
-  font-weight: 300;
+  font-size:18px;
+  color:#3b3b3b;
+  font-weight: 400;
+  line-height: 1.5em;
   letter-spacing: 1px;
   padding-bottom: 20px;
+  text-justify: inter-character;
 }

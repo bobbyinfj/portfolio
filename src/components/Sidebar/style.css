@@ -52,3 +52,14 @@
 .recentPosts{
   padding: 20px 0;
 }
+
+@media(max-width: 767px) {
+  .container div {
+    width: 100%;
+  }
+  .sidebarContainer{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
