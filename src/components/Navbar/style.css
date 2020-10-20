@@ -24,6 +24,9 @@
   padding: 0 10px;
 }
 
+.search{
+  display: none;
+}
 .search form{
   display:flex;
   margin: 0 10px;

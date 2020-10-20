@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../Navbar'
 import './style.css'
 /**
 * @author
@@ -8,14 +9,10 @@ import './style.css'
 const Header = (props) => {
   return(
     <header className="header">
-      <nav className="headerMenu">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-      </nav>
-      <div>
+    <Navbar />
+      {/* <div>
         social media links
-      </div>
+      </div> */}
     </header>
    )
 

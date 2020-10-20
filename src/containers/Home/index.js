@@ -21,12 +21,12 @@ const ImageGallery = props=>(
   <div className="galleryPost" style={props.galleryStyle}>
     <section style={{width: props.largeWidth}}>
       <div className="mainImageWrapper">
-        <img src={require('../../assets/blogPostImages/'+props.imagesArray[0])} alt="" />
+        <img src={require('../../assets/blogPostImages/'+props.imagesArray[1])} alt="" />
       </div>
     </section>
     <section className={"sideImageWrapper"} style={{width:props.smallWidth}}>
       {
-        props.imagesArray.map(image=>
+        props.imagesArray.slice(2).map(image=>
           <SideImage 
           height={props.sideImageHeight}
           src={require('../../assets/blogPostImages/' + image)}
@@ -58,7 +58,7 @@ const Home = props=> {
             />
       </Card>
       <Layout>
-        <RecentPosts style={{width:'70%'}}/>
+        <RecentPosts style={{width:'70%'}} data={blogData.data}/>
       </Layout>
     </div>
     )
