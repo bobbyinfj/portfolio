@@ -35,7 +35,7 @@ const RecentPosts = (props) => {
         <div className="blogHeader">
           <span className="blogCategory">{post.blogCategory}</span>
           <h1 className="postTitle">{post.blogTitle}</h1>
-          <span>posted on {post.postedOn} by {post.author} </span>
+          <span>{post.postedOn}{/* by {post.author} */}</span>
         </div>
 
         <div className="postImageContainer">
