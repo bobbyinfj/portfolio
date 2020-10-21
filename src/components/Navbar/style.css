@@ -23,29 +23,3 @@
   color: #565673;
   padding: 0 10px;
 }
-
-.search{
-  display: none;
-}
-.search form{
-  display:flex;
-  margin: 0 10px;
-}
-
-.searchIcon{
-  cursor: pointer;
-}
-.searchinput{
-  border:0;
-  width: 0;
-  transition: width 0.1s ease-in;
-}
-
-.searchinput.active{
-  width:150px;
-}
-
-.searchinput:focus{
-  outline:none;
-}
-

@@ -8,3 +8,7 @@
   max-height: 100%;
   object-fit: cover;
 }
+
+.search-test, .search {
+  display: none;
+}

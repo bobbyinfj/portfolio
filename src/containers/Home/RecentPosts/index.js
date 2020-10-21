@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSearch, useSearchUpdate, searchStyles } from '../../../components/Search/SearchContext.js'
 import Card from '../../../components/UI/Card'
 import './style.css'
 
@@ -10,27 +11,15 @@ import './style.css'
 
 const RecentPosts = (props) => {
   const post = props.data[0]
+
+  const darkTheme = useSearch()
+  const toggleSearch = useSearchUpdate()
+  const searchStyles = {
+    backgroundColor: darkTheme ? 'pink': 'blue'
+  }
   return(
     <div style={props.style}>
     <Card style={{marginBottom:'20px'}}>
-      {/* <div className="postImageWrapper">
-        <img src="https://i.redd.it/ill1zkep4vm01.png" />
-      </div>
-      <div style={{textAlign:'center'}}>
-        <span>
-          Featured
-        </span>
-        <h2>
-          Fitness Mantra to Live Fit Life
-        </h2>
-        <span>
-          posted on July 21, 2016 by Sora Blogging Tips
-        </span>
-        <p>
-          Lorem ipsum. Blah, blah blah.
-        </p>
-        <button>Read Now</button> 
-      </div> */}
       <Card>
         <div className="blogHeader">
           <span className="blogCategory">{post.blogCategory}</span>
@@ -47,6 +36,9 @@ const RecentPosts = (props) => {
         </div>
       </Card>
     </Card>
+    <div className='search-test' style={searchStyles}>
+      <button onClick={toggleSearch}>Toggle Search</button>
+    </div>
   </div>
    )
   }
