@@ -17,7 +17,7 @@
           "slug": "protein-classifier",
           "postedOn": "October 19, 2020",
           "author": "Robert Nakano",
-          "blogImage": "pickakit-homepage.png",
+          "blogImage": "pickakit-homepage.jpg",
           "blogText": "Prototyping- Meat/Vegetarian Classifier \n Tokenization of ingredient lists \n Project Management, Teamwork, Data Engineering \n NOSQL MONGODB interaction"
       },
       {
@@ -27,7 +27,7 @@
           "slug": "protein-classifier",
           "postedOn": "October 19, 2020",
           "author": "Robert Nakano",
-          "blogImage": "pickakit-homepage.png",
+          "blogImage": "pickakit-homepage.jpg",
           "blogText": "BERT pretrained model \n Dataflow"
       },
       {
