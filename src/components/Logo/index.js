@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './style.css'
 /**
 * @author
@@ -8,7 +9,7 @@ import './style.css'
 const Logo = (props) => {
   return(
     <div className="logo">
-      <a href="#">Robert Nakano</a>
+      <Link to="/">Robert Nakano</Link>
     </div>
    )
   }

@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import Card from '../UI/Card'
-import './style.css'
 import blogPost from '../../data/blog.json'
 
 /**

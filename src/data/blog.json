@@ -10,7 +10,7 @@
           "blogImage": "bob-mulch-IMG_20201010_134902.jpg",
           "abstract": "Hello Everyone. This website is created as a showcase for my data science and web development projecets. I plan to update this page to showcase my new work. Thank you for reading and stay tuned!",
           "methods": ["Node.js, React.js"],
-          "blogText": ""
+          "blogText": "In creating this portfolio, I chose to build it from scratch using React and Node.js. This provided me a learning opportunity for frontend web development.  Rizwhan Khan's Youtube series leveraging create-react-app was a helpful tutorial in jumpstarting the design. "
       },
       {
           "id" : 2,
@@ -19,18 +19,22 @@
           "slug": "protein-classifier",
           "postedOn": "October 19, 2020",
           "author": "Robert Nakano",
-          "blogImage": "pickakit-homepage.jpg",
+          "blogImage": "pexels-engin-akyurt-1769279.jpg",
+          "abstract": "Using meals data from various meal kit services, this project classifies based on major protein types.",
+          "methods": "Prototyping- Meat/Vegetarian Classifier \n Tokenization of ingredient lists \n Project Management, Teamwork, Data Engineering \n NOSQL MONGODB interaction",
           "blogText": "Prototyping- Meat/Vegetarian Classifier \n Tokenization of ingredient lists \n Project Management, Teamwork, Data Engineering \n NOSQL MONGODB interaction"
       },
       {
           "id": 3,
           "blogCategory": "Machine Learning",
           "blogTitle": "Twitter Sentiment Analysis for Meal Kit Services",
-          "slug": "protein-classifier",
-          "postedOn": "October 19, 2020",
+          "slug": "twitter-sentiment-analysis",
+          "postedOn": "October 23, 2020",
           "author": "Robert Nakano",
-          "blogImage": "pickakit-homepage.jpg",
-          "blogText": "BERT pretrained model \n Dataflow"
+          "blogImage": "Twitter_bird_logo.jpg",
+          "abstract": "Utilizing a pretrained BERT model and Twitter's API, perform sentiment analysis for various meal kit services",
+          "methods": "BERT, Tensorflow, Transfer Learning, Sentiment Analysis",
+          "blogText": "This project initially began as a class project for Stat 576, Data Informatics, at CSULB. We were tasked with exploring a new technology. This was my first exposure to neural networks and transfer learning models."
       },
       {
         "id": 4,
@@ -43,6 +47,18 @@
         "abstract":"With the growth of the meal kit industry, consumers are faced with a plethora of meal delivery service options. This study surveys current and potential meal kit customers and predicts optimal meal kit choices using statistical and machine learning techniques, including user- and item-based collaborative filtering, content-based filtering, and deep learning approaches. The large number of potential customers who sampled a small percentage of meal kit options presents a challenge in generating optimal predictions. This study implements and discusses the advancement of web-survey methodology and evaluates prediction methods when dealing with sparse data, with the goal of providing an optimal model for predicting consumer meal kit service choices.",
         "methods":["Survey Design"],
         "blogText": "With the growth of the meal kit industry, consumers are faced with a plethora of meal delivery service options. This study surveys current and potential meal kit customers and predicts optimal meal kit choices using statistical and machine learning techniques, including user- and item-based collaborative filtering, content-based filtering, and deep learning approaches. The large number of potential customers who sampled a small percentage of meal kit options presents a challenge in generating optimal predictions. This study implements and discusses the advancement of web-survey methodology and evaluates prediction methods when dealing with sparse data, with the goal of providing an optimal model for predicting consumer meal kit service choices."
-    }
+    },
+    {
+      "id": 5,
+      "blogCategory": "Thesis",
+      "blogTitle": "Predicting Optimal Meal Kit Choices: A Comparison of Methods",
+      "slug": "thesis-exploratory-data-analysis",
+      "postedOn": "October 23, 2020",
+      "author": "Robert Nakano",
+      "blogImage": "ratings_by_service_hist.jpg",
+      "abstract":"With the growth of the meal kit industry, consumers are faced with a plethora of meal delivery service options. This study surveys current and potential meal kit customers and predicts optimal meal kit choices using statistical and machine learning techniques, including user- and item-based collaborative filtering, content-based filtering, and deep learning approaches. The large number of potential customers who sampled a small percentage of meal kit options presents a challenge in generating optimal predictions. This study implements and discusses the advancement of web-survey methodology and evaluates prediction methods when dealing with sparse data, with the goal of providing an optimal model for predicting consumer meal kit service choices.",
+      "methods":["Heat Maps, Histograms, Bar Charts"],
+      "blogText": "One of the fun parts of running a survey is the opportunity to perform EDA (exploratory data analysis). When looking at meal kit service ratings, one cool way to visualize this is through a set of histograms using matplotlib. Check out https://pickakit.com/blog/early-survey-results for more survey details regarding exploratory data analysis."
+  }
   ]
 }

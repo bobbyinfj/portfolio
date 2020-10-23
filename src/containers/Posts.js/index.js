@@ -21,11 +21,12 @@ const Posts = (props) => {
                 <h3>{post.blogTitle}</h3>
                 <span>{post.postedOn}</span>
                 <h4>{post.blogCategory}</h4>
+                <div><strong>Abstract</strong>: {post.abstract}</div>
+            <div><strong>Methods</strong>: {post.methods}</div>
+            <img className="postImage" src={require(`../../assets/blogPostImages/${post.blogImage}`)} alt={`${post.blogImage}`}/>
+            <div>{post.blogText.substring(0,160)}...</div>
               </div>
             </NavLink>
-            <div>{post.methods}</div>
-            <div>{post.abstract}</div>
-            <img className="postImage" src={require(`../../assets/blogPostImages/${post.blogImage}`)} alt={`${post.blogImage}`}/>
           </Card>
          )
         }

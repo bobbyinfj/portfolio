@@ -4,10 +4,10 @@ import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
 import Card from '../../components/UI/Card';
 import RecentPosts from './RecentPosts';
-import './style.css';
 
 import blogData from '../../data/blog.json'
 import Layout from '../../components/Layout';
+import { Link } from 'react-router-dom';
 
 const SideImage=props=>{
   return (
@@ -21,7 +21,9 @@ const ImageGallery = props=>(
   <div className="galleryPost" style={props.galleryStyle}>
     <section style={{width: props.largeWidth}}>
       <div className="mainImageWrapper">
-        <img src={require('../../assets/blogPostImages/'+props.imagesArray[1])} alt="" />
+        <Link to={`/post/${props.slugArray[1]}`}>
+          <img src={require('../../assets/blogPostImages/'+props.imagesArray[1])} alt="" />
+        </Link>
       </div>
     </section>
     <section className={"sideImageWrapper"} style={{width:props.smallWidth}}>
@@ -46,6 +48,7 @@ const Home = props=> {
   }
   const sideImageHeight= galleryHeight/3 
   const imgAr = blogData.data.map(post=>post.blogImage)
+  const slugAr = blogData.data.map(post=>post.slug)
   return (
     <>
       <Card>
@@ -55,6 +58,7 @@ const Home = props=> {
               sideImageHeight={sideImageHeight}
               galleryStyle={galleryStyle}
               imagesArray={imgAr}
+              slugArray={slugAr}
             />
       </Card>
       <Layout>
