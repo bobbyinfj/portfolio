@@ -19,7 +19,7 @@ const Sidebar = (props) => {
   }, [posts])
 
   return(
-    <div className="sidebarContainer" style={{width:props.width}}>
+    <div className="sidebarContainer">
       <Card style={{marginBottom:'20px',padding:'20px', boxSizing:'border-box'}}>
         <div className="cardHeader">
           <span>About</span>
@@ -29,7 +29,7 @@ const Sidebar = (props) => {
         </div>
 
         <div className="cardBody">
-          <p className="personalBio">My name is Robert Nakano. I wear many hats: including Data Scientist, Web Developer, Educator, Entrepreneur, and Gardener!</p>
+          <p className="personalBio">My name is Robert Nakano. I wear many hats: Data Scientist, Web Developer, Educator, Entrepreneur, and Gardener!</p>
         </div>
       </Card>
 

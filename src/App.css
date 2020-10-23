@@ -4,6 +4,135 @@ body{
 }
 
 .App{
-  width:90%;
+  max-width: 90%;
   margin: 0 auto;
+}
+
+.card{
+  background: #fff;
+  width: 100%;
+}
+
+.container{
+  display:flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color:#333;
+}
+
+/*Recent Posts */
+.postImageWrapper {
+  height: 450px;
+  overflow: hidden;
+}
+
+.postImageWrapper img{
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.search-test, .search {
+  display: none;
+}
+
+.main .recentPost span{
+  font-size: 1.2em;
+}
+
+/*             */
+.main {
+  width: 70%;
+  text-align: center;
+}
+
+.postImage {
+  max-width: 100%;
+}
+
+.main h3{
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.sidebarContainer{
+  width: 27%;
+  background: #fff; 
+}
+
+.cardHeader{
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+.profileImageContainer{
+  width:100%;
+  box-sizing: border-box;
+
+}
+
+.profileImageContainer img{
+  max-width: 100%;
+  max-height: 100%;
+  margin: 20px 0;
+
+}
+
+.personalBio{
+  font-size: 14px;
+  color: #565673;
+  font-weight: 300;
+}
+.recentPost{
+  border-bottom:1px solid #eee;
+  margin-bottom: 10px;
+}
+.sidebarContainer .recentPost h3{
+  font-weight: 500;
+  color: #6c6c6c;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.recentPost span{
+  color: #6c6c6c;
+  font-size: 10px;
+  font-weight: 400;
+
+}
+
+.recentPosts{
+  padding: 20px 0;
+}
+
+
+/* Small Screen Styles */
+@media(max-width: 767px) {
+
+  .App {
+    width: 100%;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .container, .container div, .main, .sidebarContainer{
+    width: 100%;
+    float: left;
+  }
 }

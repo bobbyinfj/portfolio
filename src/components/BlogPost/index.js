@@ -45,6 +45,8 @@ const BlogPost = (props) => {
         </div>
         <div className="postContent">
           <h3>{post.BlogTitle}</h3>
+          <p><i>Abstract</i>: {post.abstract}</p>
+          <p><i>Methods</i>: {post.methods}</p>
           <p>{post.blogText}</p>
         </div>
       </Card>

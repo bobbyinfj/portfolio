@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Contact from './containers/Contact'
 import Post from './containers/Post'
 import {SearchProvider} from './components/Search/SearchContext.js'
+import Posts from './containers/Posts.js'
 
 function App() {
   const searchHook = useState('darkblue')
@@ -18,7 +19,7 @@ function App() {
           <Hero />
           <Route path="/" exact component={Home} />
           <Route path="/Contact" component={Contact} />
-          <Route path="/post" exact component={Home} />
+          <Route path="/post" exact component={Posts} />
           <Route path="/post/:slug" component={Post} />
         </div>
       </Router>

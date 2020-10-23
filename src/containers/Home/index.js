@@ -27,7 +27,7 @@ const ImageGallery = props=>(
     <section className={"sideImageWrapper"} style={{width:props.smallWidth}}>
       {
         props.imagesArray.slice(2).map(image=>
-          <SideImage 
+          <SideImage key={props.id}
           height={props.sideImageHeight}
           src={require('../../assets/blogPostImages/' + image)}
           alt=""
@@ -47,9 +47,9 @@ const Home = props=> {
   const sideImageHeight= galleryHeight/3 
   const imgAr = blogData.data.map(post=>post.blogImage)
   return (
-    <div>
+    <>
       <Card>
-        <ImageGallery
+        <ImageGallery key={props.id}
               largeWidth="70%"
               smallWidth="30%"
               sideImageHeight={sideImageHeight}
@@ -58,9 +58,9 @@ const Home = props=> {
             />
       </Card>
       <Layout>
-        <RecentPosts style={{width:'70%'}} data={blogData.data}/>
+        <RecentPosts data={blogData.data}/>
       </Layout>
-    </div>
+    </>
     )
 }
 

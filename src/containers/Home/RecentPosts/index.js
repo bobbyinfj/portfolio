@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSearch, useSearchUpdate, searchStyles } from '../../../components/Search/SearchContext.js'
 import Card from '../../../components/UI/Card'
-import './style.css'
 
 
 /**
@@ -18,7 +17,7 @@ const RecentPosts = (props) => {
     backgroundColor: darkTheme ? 'pink': 'blue'
   }
   return(
-    <div style={props.style}>
+    <div className="main">
     <Card style={{marginBottom:'20px'}}>
       <Card>
         <div className="blogHeader">
@@ -32,7 +31,7 @@ const RecentPosts = (props) => {
         </div>
         <div className="postContent">
           <h3>{post.BlogTitle}</h3>
-          <p>{post.blogText}</p>
+          <p>{post.abstract}</p>
         </div>
       </Card>
     </Card>

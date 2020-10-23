@@ -1,5 +1,4 @@
 import React from 'react'
-import'./style.css'
 /**
 * @author
 * @function 
@@ -7,7 +6,7 @@ import'./style.css'
 
 const Card = (props) => {
   return(
-    <div className="card" style={{width:props.width?props.width:'100%'}} {...props}>
+    <div className="card" {...props}>
       {props.children}
     </div>
    )
