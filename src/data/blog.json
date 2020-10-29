@@ -50,8 +50,8 @@
     },
     {
       "id": 5,
-      "blogCategory": "Thesis",
-      "blogTitle": "Predicting Optimal Meal Kit Choices: A Comparison of Methods",
+      "blogCategory": "EDA, Thesis",
+      "blogTitle": "Exploratory Data Analysis on Meal Kit Service Data",
       "slug": "thesis-exploratory-data-analysis",
       "postedOn": "October 23, 2020",
       "author": "Robert Nakano",
