@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Card from '../UI/Card'
 import blogPost from '../../data/blog.json'
+import { Link } from 'react-router-dom'
 
 /**
 * @author
@@ -46,6 +47,9 @@ const BlogPost = (props) => {
           <h3>{post.BlogTitle}</h3>
           <p><i>Abstract</i>: {post.abstract}</p>
           <p><i>Methods</i>: {post.methods}</p>
+          { post.slides &&
+            <p>Slides: <Link to={require(`../../assets/slides/${post.slides}`)} target="_blank" download>{post.slides}</Link></p>
+          }
           <p>{post.blogText}</p>
         </div>
       </Card>

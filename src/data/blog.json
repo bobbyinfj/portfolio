@@ -8,9 +8,9 @@
           "postedOn": "October 19, 2020",
           "author": "Robert Nakano",
           "blogImage": "bob-mulch-IMG_20201010_134902.jpg",
-          "abstract": "Hello Everyone. This website is created as a showcase for my data science and web development projecets. I plan to update this page to showcase my new work. Thank you for reading and stay tuned!",
+          "abstract": "Hello Everyone. This website is created as a showcase for my data science and web development projects. I plan to update this page to showcase my new work. Thank you for reading and stay tuned!",
           "methods": ["Node.js, React.js"],
-          "blogText": "In creating this portfolio, I chose to build it from scratch using React and Node.js. This provided me a learning opportunity for frontend web development.  Rizwhan Khan's Youtube series leveraging create-react-app was a helpful tutorial in jumpstarting the design. "
+          "blogText": "In creating this portfolio, I chose to build it from scratch using React and Node.js. This provided me a learning opportunity for frontend web development. Rizwhan Khan's YouTube series leveraging create-react-app was a helpful tutorial in jumpstarting the design. "
       },
       {
           "id" : 2,
@@ -21,8 +21,8 @@
           "author": "Robert Nakano",
           "blogImage": "pexels-engin-akyurt-1769279.jpg",
           "abstract": "Using meals data from various meal kit services, this project classifies based on major protein types.",
-          "methods": "Prototyping- Meat/Vegetarian Classifier \n Tokenization of ingredient lists \n Project Management, Teamwork, Data Engineering \n NOSQL MONGODB interaction",
-          "blogText": "Prototyping- Meat/Vegetarian Classifier \n Tokenization of ingredient lists \n Project Management, Teamwork, Data Engineering \n NOSQL MONGODB interaction"
+          "methods": "Prototyping- Meat/Vegetarian Classifier \n Natural Language Processesing \n Tokenization of ingredient lists \n Project Management, Teamwork, Data Engineering \n NOSQL MONGODB interaction",
+          "blogText": "One of the main services provided at Pick a Kit is a list of menus from the most common services where a user can compare different meals. This data is mined from the different meal kit service websites; however the type of information available is not consistent across each website. This presented an opportunity: can we predict missing data (i.e. what protein type is each meal)? \n \n I decided to break it down to a simpler problem first: before classifying meals by different proteins (chicken, beef, pork, etc.), I would start by predicting if the meals were vegetarian or not, and treat the problem as binary classification. This version of the project used a Bernoulli Naive Bayes algorithm on the sci-kit learn package. Count Vectorization was used to generate tokens from the meal kit service titles, subtitles, and list of ingredients when available. \n \n Could the model be expanded upon and improved? Of course! Working with another classmate at California State University Long Beach, we looked at comparing different models including Naive Bayes, Random Forest, LDA after utilizing. While we found LDA and Naive Bayes models to have rapid performance, a Random Forest model was deployed to production due to the infrequency of classification and its ability to work well without data normalization and minimal tuning."
       },
       {
           "id": 3,
@@ -34,7 +34,7 @@
           "blogImage": "Twitter_bird_logo.jpg",
           "abstract": "Utilizing a pretrained BERT model and Twitter's API, perform sentiment analysis for various meal kit services",
           "methods": "BERT, Tensorflow, Transfer Learning, Sentiment Analysis",
-          "blogText": "This project initially began as a class project for Stat 576, Data Informatics, at CSULB. We were tasked with exploring a new technology. This was my first exposure to neural networks and transfer learning models."
+          "blogText": "This project initially began as a class project for Stat 576, Data Informatics, at CSULB. We were tasked with exploring a new technology. This was my first exposure to neural networks and transfer learning models. The goal of the project was to use  data from Twitter's API and perform sentiment analysis for various meal kit companies. A pretrained BERT model quickly became the frontrunner and was implemented with TensorFlow using Google Colab.\n \n  "
       },
       {
         "id": 4,
@@ -46,6 +46,7 @@
         "blogImage": "thesis-coverpage.PNG",
         "abstract":"With the growth of the meal kit industry, consumers are faced with a plethora of meal delivery service options. This study surveys current and potential meal kit customers and predicts optimal meal kit choices using statistical and machine learning techniques, including user- and item-based collaborative filtering, content-based filtering, and deep learning approaches. The large number of potential customers who sampled a small percentage of meal kit options presents a challenge in generating optimal predictions. This study implements and discusses the advancement of web-survey methodology and evaluates prediction methods when dealing with sparse data, with the goal of providing an optimal model for predicting consumer meal kit service choices.",
         "methods":["Survey Design"],
+        "slides":"Thesis-Defense-Presentation-Predicting-Optimal-Meal-Kit-Choices.pdf",
         "blogText": "With the growth of the meal kit industry, consumers are faced with a plethora of meal delivery service options. This study surveys current and potential meal kit customers and predicts optimal meal kit choices using statistical and machine learning techniques, including user- and item-based collaborative filtering, content-based filtering, and deep learning approaches. The large number of potential customers who sampled a small percentage of meal kit options presents a challenge in generating optimal predictions. This study implements and discusses the advancement of web-survey methodology and evaluates prediction methods when dealing with sparse data, with the goal of providing an optimal model for predicting consumer meal kit service choices."
     },
     {
@@ -58,6 +59,7 @@
       "blogImage": "ratings_by_service_hist.jpg",
       "abstract":"With the growth of the meal kit industry, consumers are faced with a plethora of meal delivery service options. This study surveys current and potential meal kit customers and predicts optimal meal kit choices using statistical and machine learning techniques, including user- and item-based collaborative filtering, content-based filtering, and deep learning approaches. The large number of potential customers who sampled a small percentage of meal kit options presents a challenge in generating optimal predictions. This study implements and discusses the advancement of web-survey methodology and evaluates prediction methods when dealing with sparse data, with the goal of providing an optimal model for predicting consumer meal kit service choices.",
       "methods":["Heat Maps, Histograms, Bar Charts"],
+      "slides":"Thesis-Defense-Presentation-Predicting-Optimal-Meal-Kit-Choices.pdf",
       "blogText": "One of the fun parts of running a survey is the opportunity to perform EDA (exploratory data analysis). When looking at meal kit service ratings, one cool way to visualize this is through a set of histograms using matplotlib. Check out https://pickakit.com/blog/early-survey-results for more survey details regarding exploratory data analysis."
   }
   ]
