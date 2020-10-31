@@ -210,14 +210,18 @@ a {
   color: #333;
 }
 
-.postContent p{
+.postContent p, .slides{
   font-size:18px;
   color:#3b3b3b;
   font-weight: 400;
-  line-height: 1.5em;
+  line-height: 1.4em;
   letter-spacing: 1px;
-  padding-bottom: 20px;
   text-justify: inter-character;
+}
+
+.slides a{
+  text-decoration: palevioletred;
+  color: palevioletred;
 }
 
 @media (max-width: 767px) {

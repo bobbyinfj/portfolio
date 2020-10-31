@@ -43,14 +43,15 @@ const BlogPost = (props) => {
         <div className="postImageContainer">
           <img src={require('../../assets/blogPostImages/' + post.blogImage)} alt="Post Image" />
         </div>
+        
         <div className="postContent">
-          <h3>{post.BlogTitle}</h3>
-          <p><i>Abstract</i>: {post.abstract}</p>
-          <p><i>Methods</i>: {post.methods}</p>
-          { post.slides &&
-            <p>Slides: <Link to={require(`../../assets/slides/${post.slides}`)} target="_blank" download>{post.slides}</Link></p>
+        { post.slides &&
+            <div className="slides"><strong>Slides</strong>: <Link to={require(`../../assets/slides/${post.slides}`)} target="_blank" download>{post.slides.substr(post.slides.lastIndexOf('.') + 1)}</Link></div>
           }
-          <p>{post.blogText}</p>
+          <h3>{post.BlogTitle}</h3>
+          <p><strong><i>Abstract</i></strong>: {post.abstract}</p>
+          <p><strong><i>Methods</i></strong>: {post.methods}</p>
+          <p><strong><i>Text</i></strong>: {post.blogText}</p>
         </div>
       </Card>
     </div>
